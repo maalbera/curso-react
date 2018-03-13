@@ -9,7 +9,6 @@ const renderLinks = (links) => {
 };
 
 const NavSection = (props) => {
-    console.log(props)
     return (
         <div>
             <h3>{props.title}</h3>
