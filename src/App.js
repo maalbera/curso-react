@@ -26,14 +26,27 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header title="Bienvenidos" showIcon={true} />
-
-                <Button title="My Component" clickHandler={this.onClick} />
-
-                <button onClick={this.onClick}>{this.state.buttonText}</button>
-
-                <Navigation />
-                div
+                <header className="my-header">
+                    <div className="logo">
+                        <img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/youtube.svg"
+                             alt=""
+                             width="200"
+                        />
+                    </div>
+                    <h1 className="title">YOUTUBE</h1>
+                </header>
+                <section>
+                    <div></div>
+                    <h2></h2>
+                    <p></p>
+                </section>
+                <aside>
+                    <ul>
+                        <li>
+                            <img src="http://via.placeholder.com/270x135" alt="mimi" />
+                        </li>
+                    </ul>
+                </aside>
             </div>
         );
     }
