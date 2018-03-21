@@ -1,6 +1,29 @@
 .my-header {
   color: white;
   align-items: center;
-  justify-content: space-around;
   display: flex;
   background: #222; }
+  .my-header .logo {
+    text-align: center;
+    margin: 0 15%; }
+    .my-header .logo img {
+      width: 100px; }
+
+.main {
+  padding: 20px;
+  display: flex; }
+  .main .main-video {
+    flex: 3; }
+    .main .main-video .video-wrapper {
+      text-align: center; }
+  .main .sidebar ul {
+    list-style-type: none; }
+
+.search,
+.search-submit {
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 0; }
+
+.search-submit {
+  background: aquamarine; }

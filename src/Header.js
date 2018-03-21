@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
+import { NavLink } from 'react-router-dom';
+
+import SearchBar from './SearchBar';
 
 class Header extends Component {
-    renderIcon = () => {
-        if (!this.props.showIcon) {
-            return null
-        }
-        return <img src={logo} className="App-logo" alt="logo" />
-    };
-
     render() {
         return (
-            <header className="App-header">
-                {this.renderIcon()}
-                <h1 className="App-title">{this.props.title || "Este es el titulo"}</h1>
+            <header className="my-header">
+                <div className="logo">
+                    <NavLink to="/">
+                        <img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/youtube.svg"
+                             alt=""
+                             width="200"
+                        />
+                    </NavLink>
+                    <br />
+                    <h4 className="title">YOUTUBE</h4>
+                </div>
+                <SearchBar />
             </header>
         )
     }

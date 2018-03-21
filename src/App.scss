@@ -1,7 +1,45 @@
 .my-header {
   color: white;
   align-items: center;
-  justify-content: space-around;
   display: flex;
   background: #222;
+
+  .logo {
+    text-align: center;
+    margin: 0 15%;
+
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+
+  .main-video {
+    flex: 3;
+
+    .video-wrapper {
+      text-align: center;
+    }
+  }
+
+  .sidebar {
+    ul {
+      list-style-type: none;
+    }
+  }
+}
+
+.search,
+.search-submit {
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 0;
+}
+
+.search-submit {
+  background: aquamarine;
 }
